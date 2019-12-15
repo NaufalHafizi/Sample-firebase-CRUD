@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_crud/AddImage.dart';
 import 'package:flutter/material.dart';
 
 class AddTask extends StatefulWidget {
@@ -101,6 +102,7 @@ class _AddTaskState extends State<AddTask> {
                 style: TextStyle(fontSize: 22.0, color: Colors.black),
               ),
             ),
+            UploadImage(),
             Padding(
               padding: const EdgeInsets.only(top: 200),
               child: Row(
